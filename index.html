@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link href="css.css" rel="stylesheet" type="text/css">
+    <title>mgallego</title>
+</head>
+
+<body class="bodyinicio">
+        <h1 class="titulomotos">LOGIN</h1>
+    
+    <!-- AQUÍ HAGO UN DIV PARA PODER HACER EL CSS MEJOR  -->
+        <div class="contenedorformulario">
+            <!-- AQUÍ HAGO UN FORMULARIO PARA INICIAR SESIÓN -->
+            <form action="php.php" method="post" name="formulario">
+                
+                <div>
+                    
+                    <!-- USUARIO  -->
+                    <b>USUARIO: </b>
+                    <input type="email" name="usuario" placeholder="nombre@nombre.com" required>
+                </div>
+
+                <br>
+
+                <div>
+                    <!-- CONTRASEÑA -->
+                    <b>CONTRASEÑA: </b>
+                    <input type="text"name="contra" placeholder="******" required>
+                </div>
+
+                <br>
+                    <!-- ESTO ES DECORACIÓN -->
+                <div><a href="">Olvidaste tu contraseña?</a></div>
+
+                
+                <br>
+                <select class="opciones" name="opciones">
+                    <option>YAMAHA</option> 
+                    <option>HONDA</option> 
+                    <option>KAWASAKI</option>
+                 </select>
+                    <!-- ESTO ES EL BOTON PARA ACCEDER QUE EN EL FORM HE PUESTO QUE TE ENVIE AL PHP -->
+                <button type="submit">Acceder</button>
+            </form>
+        </div>
+        </div>
+    </body>
+</body>
+
+</html>

@@ -1,0 +1,86 @@
+
+/* MENU DESPLEGABLE */
+
+* {
+    margin:0px;
+    padding:0px;
+}
+
+
+.padre{
+    display: flex;
+}
+
+.menu {
+  position: fixed;
+  width: 100%;
+}
+
+header{
+  display: flex;
+  flex-direction: column;
+  
+}
+
+.menu ul {
+  background: #000;
+  display: flex;
+  list-style: none;
+}
+
+.menu ul ul {
+  display: none;
+}
+
+.menu a {
+  display: block;
+  padding: 15px 20px;
+  color: #FFF;
+  text-decoration: none;
+  line-height: 32px;
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 700;
+}
+
+.menu a:hover {
+  background: #2C3E50;
+}
+
+.menu a i {
+  margin-left: 10px;
+}
+
+.menu ul li:hover ul {
+  transition: all 0.3s ease;
+  display: block;
+  position: fixed;
+}
+
+.navmenu ul ul {
+    display:none;
+    position:absolute;
+    top:100%;
+    left:0;
+    background:#eee;
+    padding:0;
+}
+   
+.navmenu ul ul li {
+    float:none;
+    width:150px
+}
+   
+.navmenu ul ul a {
+    line-height:120%;
+    padding:10px 15px;
+}
+   
+.navmenu ul li:hover > ul {
+    display:block;
+}
+
+.divheader{
+  margin-top: 62px;
+}
+
+
